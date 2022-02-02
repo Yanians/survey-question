@@ -2,7 +2,7 @@
   "name": "project",
   "version": "1.0.0",
   "description": "List Order",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "lib": "lib"
   },
@@ -10,7 +10,6 @@
     "watch": "webpack --watch",
     "start": "node server.js",
     "runjson-server": "json-server db.json",
-    "server": " --config -run http-server",
     "webpack": "webpack"
   },
   "author": "Trespaylas",

@@ -13,7 +13,7 @@ const publicPath = path.join(__dirname,'.','public');
       app.use(middleware);
       app.use(router);
       app.get('/*', function(req, res){
-            res.sendFile(path.join(publicPath,'index.html'))
+            res.sendFile(path.join(publicPath,'survey.html'))
       });      
       //set port, listen for requests
       const PORT = process.env.port || 1000;
