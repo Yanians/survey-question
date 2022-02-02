@@ -1,0 +1,22 @@
+ul, li{
+	display: block;
+}
+
+ul{
+	background: linear-gradient(360deg, #fafafa 0%, #fafafa 100%)
+}
+
+li{
+	padding:1%;
+}
+
+li:hover{
+	font:italic;
+	border:1px grey;
+	border-radius:8px;
+	padding: 0 0 0 14px;
+	font-size:24px;
+	cursor:pointer;
+	text-shadow: 1px 1px 3px grey;
+background:linear-gradient(450deg, #ffca28 0%, #f57c00 90%)	
+}
