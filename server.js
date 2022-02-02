@@ -16,7 +16,7 @@ const publicPath = path.join(__dirname,'.','public');
             res.sendFile(path.join(publicPath,'survey.html'))
       });      
       //set port, listen for requests
-      const PORT = process.env.port || 1000;
+      const PORT = process.env.port || 3000;
       app.listen(PORT,()=> {
       	console.log(`Server is running on port ${PORT}. `);
       });
