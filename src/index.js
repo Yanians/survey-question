@@ -1,6 +1,4 @@
 
-  // const cont = new Server
-
 function asLi(item) {
 
  return $('<li>').text(item);
@@ -20,11 +18,7 @@ function showCars() {
      }).then((data) => {
       console.log(data)
        data.forEach(c => showItem(c));
-     });/*.then(response => {
-      if (!response.ok) throw Error(response.statusText);
-      return response.json();
-    })
-    .then(json => buildList(json));*/
+     });
    showItem('honda');
 }
 

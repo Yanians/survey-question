@@ -11,7 +11,7 @@ htmlWebpackPlugin = require('html-webpack-plugin'),
       		app:'.src/index.js'
       	},
       	output:{
-      		path:path.resolve('/build'),
+      		path:path.resolve('0build'),
       		filename:'bundle.main.js'
       	},
          mode:'development',
