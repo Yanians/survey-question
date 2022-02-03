@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-   baseURL: "http://localhost:9000",
+   baseURL: "http://evaluation-survey.herokuapp.com:9000",
    headers:{
     "Access-Control-Allowed-Method" : "POST, GET, OPTIONS, PUT, DELETE",
      "Access-Control-Allow-Headers" : "Content-Type, X-Auth-Token, Origin, Authorization",
@@ -32,15 +32,15 @@ function showCars() {
     method:'GET'})
    .then(resp=>{
     console.log(resp.data);
-    resp.data.forEach(c => showItem(c));
-       showItem('toyota');
+    return resp.data;/*.forEach(c => showItem(c));
+       showItem('toyota');*/
        // console.log(resp.json());
        // return resp.json();
        // return resp;
-     })/*.then((data) => {
+     }).then((data) => {
       // console.log(data)
        data.forEach(c => showItem(c));
-     });*/
+     });
    showItem('honda');
 }
 
