@@ -6,9 +6,10 @@
   "start":"node server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "worker":"node server.js",
+    "worker":"json-server db.json",
     "json":"json-server db.json",
-    "start": "node server.js json-server db.json"
+    "watch":"webpack --watch",
+    "start": "node server.js json-server"
   },
   "repository": {
     "type": "git",
