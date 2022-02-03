@@ -31,13 +31,16 @@ function showCars() {
    return http.get('comments',{
     method:'GET'})
    .then(resp=>{
+    console.log(resp.data);
+    resp.data.forEach(c => showItem(c));
        showItem('toyota');
-       console.log(resp.json());
-       return resp.json();
-     }).then((data) => {
-      console.log(data)
+       // console.log(resp.json());
+       // return resp.json();
+       // return resp;
+     })/*.then((data) => {
+      // console.log(data)
        data.forEach(c => showItem(c));
-     });
+     });*/
    showItem('honda');
 }
 
