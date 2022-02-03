@@ -4,12 +4,12 @@
 const jsonserver = require('json-server'),
          path = require('path'),
        server = jsonserver.create(),
-       router = jsonserver.router(path.join(__dirname,'db.json')),
+       router = jsonserver.router('db.json'),
    middleware = jsonserver.defaults(),
           // app = express();
    publicPath = path.join(__dirname,'.','public');
       server.use(middleware);
-      server.use(publicPath,router);
+      server.use(router);
       // server.use(server.static(publicPath));
       server.get('/*', function(req, res){
             res.sendFile(path.join(publicPath,'survey.html'))
