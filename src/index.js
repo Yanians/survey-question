@@ -11,7 +11,7 @@ function showItem(item) {
 function showCars() {
    const cars = [];
    showItem('ford');
-   fetch('http://localhost:9000/cars').then(resp=>{
+   fetch('http://localhost:9000/comments').then(resp=>{
        showItem('toyota');
        // console.log(resp.json());
        return resp.json();

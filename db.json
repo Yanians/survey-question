@@ -8,13 +8,7 @@
       "author": "typicode"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": ["vw", "bmw", "mercedes","cancer","dragon"],
   "profile": {
     "name": "typicode"
   }
