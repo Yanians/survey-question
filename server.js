@@ -11,8 +11,8 @@ const jsonserver = require('json-server'),
       server.use(middleware);
       server.use(router);
       // server.use(server.static(publicPath));
-      server.get('/*', function(req, res){
-            res.sendFile(path.join(publicPath,'survey.html'))
+      server.get('/', function(req, res){
+            res.sendFile(path.join(publicPath,'index.html'))
       });      
       //set port, listen for requests
       const PORT = process.env.port || 3000;
