@@ -4,8 +4,8 @@ const express = require('express'),
    jsonserver = require('json-server'),
          path = require('path'),
        server = jsonserver.create(),
-       router = jsonserver.router('db.json'),
-   middleware = jsonserver.defaults({static:"public"}),
+       router = jsonserver.router('./db.json'),
+   middleware = jsonserver.defaults({static:"./public"}),
           app = express(),
 
    publicPath = path.join(__dirname,'.','public');
