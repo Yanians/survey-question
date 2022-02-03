@@ -2,13 +2,12 @@
   "name": "survey",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "start": "node server.js",
+  "main": "server.js",
   "proxy":"http://localhost:9000",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "worker": "json-server db.json",
-    "json": "json-server db.json",
+    "json": "json-server ./db.json --port 9000",
     "watch": "webpack --watch",
     "start": "concurrently \"node server.js\" \"json-server --watch ./db.json --port 9000\""
   },
