@@ -15,7 +15,7 @@ const jsonserver = require('json-server'),
             res.sendFile(path.join(publicPath,'index.html'))
       });      
       //set port, listen for requests
-      const PORT = process.env.port || 3000;
+      const PORT = process.env.port || 9000;
       server.listen(PORT,()=> {
       	console.log(`Server is running on port ${PORT}. `);
       });
