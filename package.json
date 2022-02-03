@@ -9,7 +9,7 @@
     "worker": "json-server db.json",
     "json": "json-server db.json",
     "watch": "webpack --watch",
-    "start": "concurrently \" node server.js \" \"json-server --watch db.json --port 9000\""
+    "start": "concurrently \"node server.js\" \"json-server --watch ./db.json --port 9000\""
   },
   "repository": {
     "type": "git",
