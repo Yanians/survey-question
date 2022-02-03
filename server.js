@@ -17,7 +17,7 @@ const express = require('express'),
             res.sendFile(path.join(publicPath,'index.html'))
       });      
       //set port, listen for requests
-      const PORT = process.env.port || 9000;
+      const PORT = process.env.PORT || 9000;
       app.listen(PORT,()=> {
       	console.log(`Server is running on port ${PORT}. `);
       });
